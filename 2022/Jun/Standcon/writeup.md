@@ -378,8 +378,7 @@ We can simply run `hashcat` to crack keepass hashes with the following command
 ```
 hashcat -m 13400 -a 0 -w 1 hashes.txt D:\Tools\Wordlists\rockyou.txt
 
-# -m  refers to the target hash type.
-#
+# -m  refers to the target hash type. i.e. 13400 for the respective keepass hash we are cracking.
 ```
 *For more information on the corresponding values for the hash types run `hashcat -h` or from [here](https://hashcat.net/wiki/doku.php?id=example_hashes)*
 
