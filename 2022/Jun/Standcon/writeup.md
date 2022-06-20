@@ -1,3 +1,6 @@
+# TOC
+# INSERT TOC HERE
+
 # OSINT
 ## OSINT/I Sea You (Part 1)
 ![osint category](https://img.shields.io/badge/category-osint-lightgrey.svg)
