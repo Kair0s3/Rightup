@@ -359,6 +359,7 @@ So viewing the contents of `Atlan.7z` reveals a KeePass Password Database file (
 I decided to jump straight to password cracking first using `hashcat`.
 
 But we need to first obtain the hash.  We can do that using `keepass2john Atlan.kdbx > hash.txt`. Assuming, the use of `hashcat`, remove the `Atlan:` from the `hash.txt` file before using.
+
 ![](images/Pasted%20image%2020220619191527.png)
 
 Once the hash has been generated and kept into our hash file. We can make use of `hashcat` (on host machine), to crack the keepass hash.
@@ -435,10 +436,11 @@ We can now see that this time, it isn't in plain text but rather hashed like mos
 
 And with that, we have the final puzzle piece! The final password for the user is `!#udamnHACKER#!`.
 
-Finally, entering the password reveals the `TOP-SECRET` with empty text in the textbox. And although, this was part of the RE process as it was found under the `Config` code, I was randomly pressing on the `<TOP-SECRET>` text and it triggered the showing of text and scrolling down, there was the flag in clear text!
+Finally, entering the password reveals the `TOP-SECRET` with empty text in the textbox. And although, this was part of the RE process as it was found under the `Config` code, I was randomly pressing on the `<TOP-SECRET>` text and it triggered the showing of text and scrolling down, we have the flag in clear text!
+
 ![](images/Pasted%20image%2020220619025932.png)
 
-Credentials for this challenge
+Credentials/Passwords in this challenge
 ```
 Atlan.7z - 230K-YUI9-3XDE-R97Z-5X3D-L4E8
 KeePass DB - b503290174
