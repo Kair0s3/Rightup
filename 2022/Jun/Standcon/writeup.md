@@ -436,7 +436,9 @@ We can now see that this time, it isn't in plain text but rather hashed like mos
 
 And with that, we have the final puzzle piece! The final password for the user is `!#udamnHACKER#!`.
 
-Finally, entering the password reveals the `TOP-SECRET` with empty text in the textbox. And although, this was part of the RE process as it was found under the `Config` code, I was randomly pressing on the `<TOP-SECRET>` text and it triggered the showing of text and scrolling down, we have the flag in clear text!
+Finally, entering the password reveals the `TOP-SECRET` with empty text in the textbox. And although, I think this part was supposed to through the RE process as there was function for this in the `Config` code, but I was randomly pressing on the `<TOP-SECRET>` text and it triggered the showing of text.
+
+And scrolling down, we have the flag in clear text!
 
 ![](images/Pasted%20image%2020220619025932.png)
 
