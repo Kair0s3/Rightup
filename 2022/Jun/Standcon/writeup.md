@@ -1,8 +1,15 @@
-# TOC
-# INSERT TOC HERE
+# Table of Content
+- [OSINT](#osint)
+  - [I Sea You](#i-sea-you-part-1)
+  - [Trolley Trolling](#trolley-trolling)
+- [Web](#web)
+  - [A Fishy Site](a-fishy-site)
+  - [Files can slip too](files-can-slip-too)
+- [Misc](#misc)
+  - [Atlan Safe P1](#Atlan-Safe-P1)
 
 # OSINT
-## OSINT/I Sea You (Part 1)
+## I Sea You Part 1
 ![osint category](https://img.shields.io/badge/category-osint-lightgrey.svg)
 ![score](https://img.shields.io/badge/score-69-blue.svg)
 ![solves](https://img.shields.io/badge/solves-80-brightgreen.svg)
