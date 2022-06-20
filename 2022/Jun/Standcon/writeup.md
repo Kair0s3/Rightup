@@ -1,10 +1,10 @@
 # Table of Content
 - [OSINT](#osint)
   - [I Sea You](#i-sea-you-part-1)
-  - [Trolley Trolling](#trolley-trolling)
+  - [Trolley Trolling](#trolley-trolling) (TOBEDOC)
 - [Web](#web)
   - [A Fishy Site](a-fishy-site)
-  - [Files can slip too](files-can-slip-too)
+  - [Files can slip too](files-can-slip-too) (TOBEDOC)
 - [Misc](#misc)
   - [Atlan Safe P1](#Atlan-Safe-P1)
 
