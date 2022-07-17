@@ -1,10 +1,10 @@
 # Table of Content
 - [OSINT](#osint)
   - [I Sea You](#i-sea-you-part-1)
-  - [Trolley Trolling](#trolley-trolling) (TOBEDOC)
+  - [Trolley Trolling](#trolley-trolling)
 - [Web](#web)
   - [A Fishy Site](a-fishy-site)
-  - [Files can slip too](files-can-slip-too) (TOBEDOC)
+  - [Files can slip too](files-can-slip-too)
 - [Misc](#misc)
   - [Atlan Safe P1](#Atlan-Safe-P1)
 
@@ -227,6 +227,7 @@ Then using the php web shell, we can run commands  below to find the flag
 `ls ../../`
 `ls ../../../`
 `cat /flag_022dc5a58d33.txt` *This is because the path of `../../../` is `/`*
+
 ### Flag
 ```
 STANDCON22{uns4f3_z!p_3xtr4c7!0n_!5_4_r34l_d4ng3r}
