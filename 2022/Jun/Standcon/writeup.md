@@ -103,7 +103,6 @@ If you manage to find it, the flag is STANDCON22{text_on_box}. Replace any space
 
 ### Solution
 Using the Hint that was given for free, we can narrow down to the carpark near Vivocity
-![](images/Pasted%20image%2020220717144047.png)
 
 And viewing it in the `Satellite` view, we can see that the carpark is the correct one.
 ![](images/Pasted%20image%2020220618132300.png)
