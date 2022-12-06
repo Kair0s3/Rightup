@@ -1,6 +1,6 @@
 # TickTock Writeup
 
-![](images/Pasted%20image%2020221206125100.png)
+![](images/Pasted%20image%2020221206125104.png)
 
 Given the vulnerable the vulnerable function for the TickTock application, we can see that it is likely that `comparestring()` is being used to check the username and password values.
 
