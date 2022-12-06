@@ -77,7 +77,7 @@ for idx in range(len(username), userlen):
 print("Username is " + username)
 ```
 
-> Initially, the `string.ascii_letters + string.digits` was replaced with ascii characters containing `a-zA-Z0-9` and all other special characters. But after obtaining the username, we can see that only alphanumeric values are used. Hence it was changed.
+> Initially, the `string.ascii_letters + string.digits` was replaced with ascii characters containing `a-zA-Z0-9` and all other special characters. But after obtaining the username, we can see that only alphanumeric values are used. Hence it was changed to reduce time needed.
 
 So, this essentially checks from e.g. `XAAAAAAAAA` where `X` are the values from `a-zA-Z0-9`. And this continues for each of the indexes until we see the following output.
 
