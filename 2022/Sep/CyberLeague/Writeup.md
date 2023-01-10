@@ -28,19 +28,19 @@ P.S: There are some bot accounts on some social media websites using the same pr
 ### Solution
 
 Googling for `Tom Horlicks` reveals some leads and one that seems to contain `DraftDownLabs`.
-![[Pasted image 20220925234630.png]]
 
+![](Pasted%20image%2020220925234630.png)
 
 So, going to the link and visiting the "real" Tom Horlicks doesn't give us anything.
 
 But after connecting with him through the "Connect" feature on LinkedIn (after it has been accepted). We can now see his contact and most importantly his interest list, though this was not obvious to me... Instead I thought I was supposed "Social Engineer" him for more information to find a vector.
 
-![[Pasted image 20220925235036.png]]
-
+![](Pasted%20image%2020220925235036.png)
 But, it seems that by trying to "Social Engineer" the person, I was nudged back to the intended path - The interest list.
 
 Viewing the interest list.
-![[Pasted image 20220925235216.png]]
+
+![](Pasted%20image%2020220925235216.png)
 
 We can start to figure some potential leads, especially those likely to have login.
 In this list, Atlassian, Asana and Trello seems to be the more interesting ones.
@@ -55,8 +55,8 @@ But unfortunately, there were no login leads. However, my teammate @jxt00 was ab
 Here, we can start visiting the internal pages at `https://draftdownlabs.com/internal/r3s34rch_l4b5.php`.
 
 But visiting the page seems to be empty... Or maybe not!
-![[Pasted image 20220925235643.png]]
 
+![](Pasted%20image%2020220925235643.png)
 This means that we can make use of the `X-Client-IP` header to gain internal access. But setting the header `X-Client-Ip: 127.0.0.1` was only the first step as now, we are prompted with the following
 ![[Pasted image 20220925235854.png]]
 
@@ -65,12 +65,13 @@ From here, we can also see the authentication being used
 
 And through some googling, we can see that we need to include the `Authorization` header along with our credentials base64 encoded as such `base64(username:password)` before we pass it to the server, and this should give us access.
 
-![[Pasted image 20220926000114.png]]
+![](Pasted%20image%2020220926000114.png)
 
 Yes! Now we have a 302 Found linking to the `sup3r_s3cr3t.pdf` file and following the redirect does indeed reveal the pdf data.
 
 From here, I downloaded it the pdf and it seems that the source code for their API is found in pastebin url... And the URL we are targetting next is `/internal/thh38267184.php`
-![[Pasted image 20220926000316.png]]
+
+![](Pasted%20image%2020220926000316.png)
 
 Going to the pastebin and downloading it with the provided password `draftdownlabs`. We can see the source code as shown below.
 ``` sourceCode.php
@@ -118,6 +119,7 @@ But! Since `$key` is set to `0e51[REDACTED]`, we can simply force the check to b
 Furthermore, when an invalid api key is provided, it does not immediately return the response and instead allows the code to flow down to the `if else` condition at the bottom.
 
 So, with that I generated a script to find a API key that when concatenated with `DDL_SuP3RSecret`  and md5 hashed will result in `0eXXXX...`.
+
 ```
 import hashlib
 import requests
@@ -142,7 +144,7 @@ print(findVulnerableHash())
 
 As such, we can now send it along as the `X-Api-Key` header value which will give us flag. 
 
-![[Pasted image 20220926001413.png]]
+![](Pasted%20image%2020220926001413.png)
 
 And with that, we have the flag! Also, notice how the `Error Code` is printed despite us getting the flag suggesting the flaw that the developers made - PHP loose comparison and not immediately returning the invalid response. 
 
@@ -183,8 +185,9 @@ api_key = findVulnerableHash()
 sendRequest(api_key)
 ```
 
-### Sidetracking... (Skip this if not interested)
-With the email and password, I thought maybe I had to find an internal endpoint. But not knowing where to go, I checked the draftdownlabs' robots.txt since it was in scope.
+### Wandering into the unknown (Skip this if not interested)
+
+While attempting the challenge, I thought that perhaps for the email and password, I had to find an internal endpoint. But not knowing where to look, I checked the draftdownlabs' robots.txt since it was in scope.
 ```
 User-agent: *
 Disallow: /wp-admin
