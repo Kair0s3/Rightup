@@ -2,9 +2,9 @@
 
 # Table of Content
 - [Web](#web)
-  - [ezxxe](ezxxe)
-  - [Files can slip too](File-Uploader-1)
-  - [Express JavaScript Security](Express-JavaScript-Security)
+  - [ezxxe](#ezxxe)
+  - [Files can slip too](#File-Uploader-1)
+  - [Express JavaScript Security](#Express-JavaScript-Security)
 
 # Headspace
 
