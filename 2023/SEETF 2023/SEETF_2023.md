@@ -1,5 +1,11 @@
 # SEETF 2023
 
+# Table of Content
+- [Web](#web)
+  - [ezxxe](ezxxe)
+  - [Files can slip too](File-Uploader-1)
+  - [Express JavaScript Security](Express-JavaScript-Security)
+
 # Headspace
 
 ![Untitled](images/Untitled.png)
@@ -488,7 +494,7 @@ Also, the reason for using a `time.sleep(0.25)` was because of my script failing
 # https://hackmd.io/@Chivato/HyWsJ31dI
 ```
 
-## Express JS (YEET, do another time)
+## Express JavaScript Security (YEET, do another time)
 
 ### PoC
 
