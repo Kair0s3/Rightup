@@ -4,7 +4,7 @@
 - [Web](#web)
   - [ezxxe](#ezxxe)
   - [Files can slip too](#File-Uploader-1)
-  - [Express JavaScript Security](#Express-JavaScript-Security)
+  - [Express JavaScript Security (DO NOT CLICK ON ME)](#Express-JavaScript-Security)
 
 # Headspace
 
