@@ -6,6 +6,14 @@
   - [File Uploader 1](#File-Uploader-1)
   - [Express JavaScript Security (DO NOT CLICK ON ME)](#Express-JavaScript-Security)
 
+# Headspace
+
+![Untitled](images/Untitled.png)
+
+Big thanks to `team elmo` for letting me play with them for SEETF 2023 and ending in Second Place in Singapore Students Category. Thanks to SEE for hosting this CTF and also, congratulations to the other winners from the Open and Students category!
+
+I felt that overall, the CTF challenges were rather intriguing and as much as I could only solve 3 of the webs, there were some that I felt maybe I just needed to get exposed to it such as the PHP ones since the initial vector was clear. But it’s alright! I learnt quite a handful from this CTF. In the next SEETF, I am going to try to solve more web challenges (hopefully future me isn’t too burnt out haha).
+
 # Web
 
 ## ezxxe
